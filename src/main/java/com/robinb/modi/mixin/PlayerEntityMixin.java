@@ -24,6 +24,9 @@ public abstract class PlayerEntityMixin extends LivingEntity implements PlayerEn
         killCount += amount;
         System.out.println(killCount);
     }
+    public int getKills(){
+        return this.killCount;
+    }
 
     @Inject(method = "writeCustomDataToTag", at = @At("RETURN"))
     private void writeData(CompoundTag tag, CallbackInfo info){
