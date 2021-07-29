@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "modi",
+  "version": "${version}",
+  "name": "Modi",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/modi/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.robinb.modi.client.ModiClient"
+    ],
+    "main": [
+      "com.robinb.modi.Modi"
+    ]
+  },
+  "mixins": [
+    "modi.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.6",
+    "fabric": "*",
+    "minecraft": "1.15.2"
+  }
+}
